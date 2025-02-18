@@ -22,7 +22,7 @@
     "build:css": "run-s lint-scss scss autoprefixer",
     "build:js": "run-s lint uglify",
     "build:images": "run-s imagemin",
-    "build": "netlify deploy --prod",
+    "build": "run-s build:*",
     "watch:css": "onchange \"src/scss\" -- run-s build:css",
     "watch:js": "onchange \"src/js\" -- run-s build:js",
     "watch:images": "onchange \"src/images\" -- run-s build:images",
@@ -32,7 +32,7 @@
   "devDependencies": {
     "@eslint/js": "^9.20.0",
     "autoprefixer": "^10.4.20",
-    "browser-sync": "^1.3.7",
+    "browser-sync": "^1.9.2",
     "eslint": "^9.20.1",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-node": "^11.1.0",
@@ -52,9 +52,11 @@
   "main": ".eslintrc.js",
   "dependencies": {
     "22": "0.0.0",
-    "netlify-cli": "^16.4.2",
+    "imagemin-gifsicle": "^7.0.0",
+    "netlify-cli": "^16.9.3",
     "netlify-lambda": "^0.4.0",
-    "serverless-http": "^3.2.0"
+    "serverless-http": "^3.2.0",
+    "uuid": "^11.0.5"
   },
   "version": "1.0.0"
 }
