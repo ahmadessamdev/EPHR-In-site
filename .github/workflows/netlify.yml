@@ -27,6 +27,6 @@
          - name: Deploy to Netlify
            run: |
              npm install -g netlify-cli
-             netlify deploy --prod --dir=build --auth=$NETLIFY_AUTH_TOKEN --site=your-netlify-site-id
+             netlify deploy --prod --dir=build --auth=4e720c9c30e1a63a0fa241dfcb1d456814c50bc6 --site=5af291e1-0601-4cc3-9192-b0283f4c3a27
            env:
              NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
