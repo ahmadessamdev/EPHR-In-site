@@ -1,3 +1,10 @@
+@use 'sass:math';
+@use 'sass:color';
+@use 'sass:list';
+@use "../abstracts/functions" as funcs;
+@use "../abstracts/mixins" as mxs;
+@use "../abstracts/include-media" as media;
+
 .features-wrap {
     display: flex;
     flex-wrap: wrap;
@@ -30,7 +37,7 @@
     justify-content: center;
 }
 
-@include media( '>medium' ) {
+@include media.media( '>tablet' ) {
 
     .features-wrap {
 

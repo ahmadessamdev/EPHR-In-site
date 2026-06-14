@@ -6,11 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>EPHR Institute</title>
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
-    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/style.css">
 	<script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <style>
+        /* From Uiverse.io by SelfMadeSystem */ 
+.btn {
+  margin: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn kbd {
+  margin: 0.25rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.btn-primary {
+  background: linear-gradient(#075f01, #179a00);
+  color: white;
+  box-shadow: inset 0pt 4pt 3pt -2pt #1e8120, 0pt 4pt 5pt -3pt #0009;
+  border-bottom: 2pt solid #079f23;
+  transition: all 0.5s ease;
+}
+
+.btn-primary:hover {
+  border-bottom: 3pt solid #06771b;
+  translate: 0pt -1pt;
+}
+
+.btn-primary:active {
+  box-shadow: inset 0pt 4pt 3pt -2pt #209242, 0pt 4pt 5pt -3pt #0000;
+  border-bottom: 1pt solid #096606;
+  translate: 0pt 0pt;
+}
+
+.btn-primary kbd {
+  background-color: #0f390d;
+  box-shadow: inset 0pt -3pt 3pt -2pt #309a15, inset 0pt 3pt 3pt -2pt #1d9f1f,
+    0pt 2pt 2pt -2pt #0005, 0pt 0pt 0pt 2pt #099210;
+}
+
+.btn-base {
+  background: #196c16;
+}
+    </style>
 </head>
-<body class="is-boxed has-animations">
+<body class="has-animations">
     <div class="body-wrap">
         <header class="site-header">
             <div class="container">
@@ -122,19 +169,19 @@
             </section>
 
             <section class="pricing section">
-                <div class="container-sm">
+                <div class="container">
                     <div class="pricing-inner section-inner">
-                        <div class="pricing-header text-center">
+                        <div class="pricing-header">
                             <h2 class="section-title mt-0">Overview</h2>
                             <p class="section-paragraph mb-0">We are specialized in providing innovative and effective solutions for human resources, organization development, and business strategy challenges. our experts have over 15 years of experience in various roles, including business strategy, and HR consultancy , across different industries and sectors.
 We are skilled in strategic planning, negotiation, team building, public speaking, and administration,  We also have a strong academic background in law, political science, and economics , which gives us a unique perspective and insight into the legal, social, and cultural aspects of business and management. our mission is to empower and enable organizations and individuals to achieve their goals and potential through evidence-based and customized HR and business consulting services.</p>
                         </div>
 
-						<div class="pricing-header text-center">
+						<div class="pricing-header">
                             <h2 class="section-title mt-0">Vision</h2>
                             <p class="section-paragraph mb-0">To become the largest professional and ethical service provider in the field of human resources management.</p>
 						</div>
-						<div class="pricing-header text-center">
+						<div class="pricing-header">
                             <h2 class="section-title mt-0">Mission</h2>
                             <p class="section-paragraph mb-0">Participate in the drafting of professional and ethical standards in human resources management, globally, by forming a Code of professional ethics. We deliver high professional services for corporates and individuals, we guide and lead individuals to human resources, we create a safe social communication space among employees, we evaluate different work environments, making them more professional and ethical.
 							</p>
@@ -148,8 +195,24 @@ We are skilled in strategic planning, negotiation, team building, public speakin
 				<div class="container">
 					<div class="cta-inner section-inner">
 						<h3 class="section-title mt-0">Book a free consultation visit now</h3>
-						<div class="cta-cta">
-							<a class="button button-primary button-wide-mobile" href="https://api.whatsapp.com/send/?phone=201101043500&text&type=phone_number&app_absent=0">Contact us on Whatsapp</a>
+                        <!-- From Uiverse.io by SelfMadeSystem --> 
+                        <a href="https://wa.me/201101043500" class="btn btn-primary" style="text-decoration: none;">
+                        <span class="btn-txt">Contact Us on WhatsApp</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="" viewBox="0 0 16 16" style="margin: .4em auto 0; color: #00ff1a;" lc-helper="svg-icon">
+                                <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
+                            </svg>
+                        </a>
+
+						<!--
+                        <div class="">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="4em" height="4em" fill="currentColor" class="" viewBox="0 0 16 16" style="color: #25D366;" lc-helper="svg-icon">
+                                    <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
+                                </svg>
+                                        <button type="button" class="btn btn-outline-success">Contact Us on WhatsApp</button>
+                                    </div>
+                        </div>
+                        -->    
 						</div>
 					</div>
 				</div>
@@ -166,35 +229,27 @@ We are skilled in strategic planning, negotiation, team building, public speakin
                     </div>
                     <ul class="footer-social-links list-reset">
                         <li>
-							<a href="#">
+							<a href="https://www.linkedin.com/company/ethical-professional-human-resources-institute-ephr-in/">
                                 <span class="screen-reader-text">Linked In</span>
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" style="color: rgb(2, 112, 215);" width="34" height="34" viewBox="0 0 24 24"><path fill="currentColor" d="M18.44 3.06H5.56a2.507 2.507 0 0 0-2.5 2.5v12.88a2.507 2.507 0 0 0 2.5 2.5h12.88a2.5 2.5 0 0 0 2.5-2.5V5.56a2.5 2.5 0 0 0-2.5-2.5m1.5 15.38a1.51 1.51 0 0 1-1.5 1.5H5.56a1.51 1.51 0 0 1-1.5-1.5V5.56a1.51 1.51 0 0 1 1.5-1.5h12.88a1.51 1.51 0 0 1 1.5 1.5Z"></path><path fill="currentColor" d="M6.376 10.748a1 1 0 1 1 2 0v6.5a1 1 0 0 1-2 0Z"></path><circle cx="7.376" cy="6.744" r="1" fill="currentColor"></circle><path fill="currentColor" d="M17.62 13.37v3.88a1 1 0 1 1-2 0v-3.88a1.615 1.615 0 1 0-3.23 0v3.88a1 1 0 0 1-2 0v-6.5a1.016 1.016 0 0 1 1-1a.94.94 0 0 1 .84.47a3.61 3.61 0 0 1 5.39 3.15"></path></svg>
 								
-
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 16 16" version="1.1">
-									<g id="surface1">
-										<path style=" stroke:none;fill-rule:nonzero;fill:#0270D7;fill-opacity:1;" d="M 0.414062 5.132812 L 3.53125 5.132812 L 3.53125 16 L 0.414062 16 Z M 0.414062 5.132812 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:#0270D7;fill-opacity:1;" d="M 1.910156 0 C 0.757812 0 0.00390625 0.808594 0.00390625 1.886719 C 0.00390625 2.941406 0.734375 3.769531 1.863281 3.769531 L 1.890625 3.769531 C 3.066406 3.769531 3.796875 2.933594 3.789062 1.886719 C 3.765625 0.808594 3.058594 0 1.910156 0 Z M 1.910156 0 "/>
-										<path style=" stroke:none;fill-rule:nonzero;fill:#0270D7;fill-opacity:1;" d="M 12.046875 5.03125 C 10.261719 5.03125 9.144531 6.089844 8.9375 6.839844 L 8.9375 5.132812 L 5.433594 5.132812 C 5.476562 6.035156 5.433594 16 5.433594 16 L 8.9375 16 L 8.9375 10.125 C 8.9375 9.792969 8.925781 9.464844 9.011719 9.234375 C 9.25 8.582031 9.769531 7.902344 10.699219 7.902344 C 11.917969 7.902344 12.46875 8.910156 12.46875 10.378906 L 12.46875 16 L 16.003906 16 L 16.003906 9.957031 C 16.003906 6.59375 14.265625 5.03125 12.046875 5.03125 Z M 12.046875 5.03125 "/>
-									</g>
-								</svg>
-                            </a>
-
-						<!--
-                            <a href="#">
-                                <span class="screen-reader-text">Facebook</span>
-                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z" fill="#0270D7"/>
-                                </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <span class="screen-reader-text">Twitter</span>
-                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z" fill="#0270D7"/>
+                            <a href="https://www.facebook.com/share/1QXmeCV9pp/">
+                                <span class="screen-reader-text">Facebook</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" style="color: rgb(2, 112, 215);" width="34" height="34" viewBox="0 0 24 24"><path fill="currentColor" d="M19.02 4.975A9.93 9.93 0 0 0 2.07 12A9.935 9.935 0 0 0 12 21.935a10 10 0 0 0 3.8-.75a10.2 10.2 0 0 0 3.22-2.16a9.934 9.934 0 0 0 0-14.05m-.7 13.34a8.92 8.92 0 0 1-5.32 2.57v-6.56h1.88a1 1 0 0 0 0-2H13v-2.74a1 1 0 0 1 1-1h1.2a1 1 0 0 0 0-2h-1.7a2.5 2.5 0 0 0-2.5 2.5v3.24H9.13a1 1 0 1 0 0 2H11v6.56a8.919 8.919 0 1 1 9.26-5.47a9.1 9.1 0 0 1-1.94 2.9"></path></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/ephrinstitute1?igsh=MTBuazFlY3lpMXZqdg==">
+                                <span class="screen-reader-text">Instagram</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" style="color: #0270D7;" width="38" height="38" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M18.437 20.937H5.563a2.5 2.5 0 0 1-2.5-2.5V5.563a2.5 2.5 0 0 1 2.5-2.5h12.874a2.5 2.5 0 0 1 2.5 2.5v12.874a2.5 2.5 0 0 1-2.5 2.5M5.563 4.063a1.5 1.5 0 0 0-1.5 1.5v12.874a1.5 1.5 0 0 0 1.5 1.5h12.874a1.5 1.5 0 0 0 1.5-1.5V5.563a1.5 1.5 0 0 0-1.5-1.5Z"></path><path fill="currentColor" d="M12 16.594A4.595 4.595 0 1 1 16.6 12a4.6 4.6 0 0 1-4.6 4.594M12 8.4a3.595 3.595 0 1 0 3.6 3.6A3.6 3.6 0 0 0 12 8.4"></path><circle cx="17.2" cy="6.83" r="1.075" fill="currentColor"></circle>
                                 </svg>
                             </a>
                         </li>
+                        <!--
                         <li>
                             <a href="#">
                                 <span class="screen-reader-text">Google</span>
@@ -205,7 +260,7 @@ We are skilled in strategic planning, negotiation, team building, public speakin
 						-->
                         </li>
                     </ul>
-                    <div class="footer-copyright">&copy; 2025 EPHR-IN, all rights reserved</div>
+                    <div class="footer-copyright">&copy; 2025 EPHR Institute, all rights reserved</div>
                 </div>
             </div>
         </footer>

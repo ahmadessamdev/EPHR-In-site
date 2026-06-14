@@ -1,3 +1,9 @@
+@use 'sass:math';
+@use 'sass:color';
+@use 'sass:list';
+@use "../abstracts/functions" as funcs;
+@use "../abstracts/mixins" as mxs;
+@use "../abstracts/include-media" as media;
 .hero {
 	text-align: center;
     padding-top: 48px;
@@ -89,7 +95,7 @@
 	transform: rotateZ(45deg);
 
 	&::before {
-		background: linear-gradient(to left, color(bg, 1) 0%, rgba(color(bg, 1), 0) 60%);
+		background: linear-gradient(to left, funcs.color(bg, 1) 0%, rgba(funcs.color(bg, 1), 0) 60%);
 		transform: rotateZ(45deg) scale(1.5);
 	}
 }
@@ -99,11 +105,11 @@
 	top: 64.1%;
 	width: 37.87%;
 	height: 50.50%;
-	background: linear-gradient(to left top, color(primary, 1), rgba(color(primary, 1), 0));
+	background: linear-gradient(to left top, funcs.color(primary, 1), rgba(funcs.color(primary, 1), 0));
 	transform: rotateZ(-45deg);
 
 	&::before {
-		background: linear-gradient(to top, color(bg, 1) 0%, rgba(color(bg, 1), 0) 60%);
+		background: linear-gradient(to top, funcs.color(bg, 1) 0%, rgba(funcs.color(bg, 1), 0) 60%);
 		transform: rotateZ(-45deg) scale(1.5);
 	}
 }
@@ -116,7 +122,7 @@
 	background: linear-gradient(to left top, #00BFFB, rgba(#00BFFB, 0));
 
 	&::before {
-		background: linear-gradient(to left, color(bg, 1) 0%, rgba(color(bg, 1), 0) 60%);
+		background: linear-gradient(to left, funcs.color(bg, 1) 0%, rgba(funcs.color(bg, 1), 0) 60%);
 		transform: rotateZ(45deg) scale(1.5);
 	}
 }
@@ -126,11 +132,11 @@
 	top: -8%;
 	width: 45.45%;
 	height: 60.60%;
-	background: linear-gradient(to left top, color(primary, 1), rgba(color(primary, 1), 0));
+	background: linear-gradient(to left top, funcs.color(primary, 1), rgba(funcs.color(primary, 1), 0));
 	transform: rotateZ(-135deg);
 
 	&::before {
-		background: linear-gradient(to top, rgba(color(typography, 1), .24) 0%, rgba(color(typography, 1), 0) 60%);
+		background: linear-gradient(to top, rgba(funcs.color(typography, 1), .24) 0%, rgba(funcs.color(typography, 1), 0) 60%);
 		transform: rotateZ(-45deg) scale(1.5);
 	}
 }
@@ -138,7 +144,7 @@
 .hero-figure-box-05,
 .hero-figure-box-06,
 .hero-figure-box-07 {
-	background-color: color(bg, 3);
+	background-color: funcs.color(bg, 3);
 	box-shadow: -20px 32px 64px rgba(#000, .25);
 }
 
@@ -171,11 +177,11 @@
 	top: 81.6%;
 	width: 19.51%;
 	height: 26.01%;
-	background: color(primary, 1);
+	background: funcs.color(primary, 1);
 	transform: rotateZ(-22deg);
 
 	&::before {
-		background: linear-gradient(to left, rgba(color(typography, 1), 0) 0%, rgba(color(typography, 1), .48) 100%);
+		background: linear-gradient(to left, rgba(funcs.color(typography, 1), 0) 0%, rgba(funcs.color(typography, 1), .48) 100%);
 		transform: rotateZ(45deg) scale(1.5);
 	}
 }
@@ -189,7 +195,7 @@
 	transform: rotateZ(-52deg);
 
 	&::before {
-		background: linear-gradient(to left, rgba(color(typography, 1), 0) 0%, rgba(color(typography, 1), .64) 100%);
+		background: linear-gradient(to left, rgba(funcs.color(typography, 1), 0) 0%, rgba(funcs.color(typography, 1), .64) 100%);
 		transform: rotateZ(45deg) scale(1.5);
 	}
 }
@@ -203,7 +209,7 @@
 	transform: rotateZ(-50deg);
 }
 
-@include media( '<=medium' ) {
+@include media.media( '<=tablet' ) {
 
 	.hero-cta {
 		max-width: 280px;
@@ -227,7 +233,7 @@
 	}
 }
 
-@include media( '>medium' ) {
+@include media.media( '>tablet' ) {
 
     .hero {
 		text-align: left;
