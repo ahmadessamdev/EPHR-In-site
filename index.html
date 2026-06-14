@@ -260,12 +260,15 @@ We are skilled in strategic planning, negotiation, team building, public speakin
 						-->
                         </li>
                     </ul>
-                    <div class="footer-copyright">&copy; 2025 EPHR Institute, all rights reserved</div>
+                    <div class="footer-copyright">&copy;<span id="year"></span>&nbsp;EPHR Institute, all rights reserved</div>
                 </div>
             </div>
         </footer>
     </div>
 
     <script src="dist/js/main.min.js"></script>
+    <script type="text/javascript">
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 </html>
