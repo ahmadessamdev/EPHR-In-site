@@ -1,3 +1,10 @@
+@use 'sass:math';
+@use 'sass:color';
+@use 'sass:list';
+@use "../abstracts/functions" as funcs;
+@use "../abstracts/mixins" as mxs;
+@use "../abstracts/include-media" as media;
+
 .pricing-header {
 	margin-bottom: 48px;
 }
@@ -45,14 +52,14 @@
 .pricing-table-header,
 .pricing-table-features-title,
 .pricing-table-features li {
-	border-bottom: 1px solid rgba(color(typography, 2), .24);
+	border-bottom: 1px solid rgba(funcs.color(typography, 2), .24);
 }
 
 .pricing-table-inner {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    background: color(bg, 4);
+    background: funcs.color(bg, 4);
     padding: 24px;
     height: 100%;
 
@@ -68,23 +75,23 @@
         right: 0;
         bottom: 0;
         left: 0;
-        @include shadow;
+        @include mxs.shadow;
     }
 }
 
 .pricing-table-price {
-	@if ( get-font-family(heading) != get-font-family(base) ) {
-		@include font-family(heading);
+	@if ( funcs.get-font-family(heading) != funcs.get-font-family(base) ) {
+		@include mxs.font-family(heading);
 	}
 }
 
 .pricing-table-price-currency {
-	color: color(typography, 2);
+	color: funcs.color(typography, 2);
 }
 
 .pricing-table-features-title {
-	color: color(typography, 1);
-	@include font-weight(bold);
+	color: funcs.color(typography, 1);
+	@include mxs.font-weight(bold);
 }
 
 .pricing-table-features {
@@ -109,16 +116,12 @@
     align-self: flex-end;
 }
 
-@include media( '>medium' ) {
+@include media.media( '>tablet' ) {
 
-	.pricing {
-
-		.section-paragraph {
-	        padding-left: 90px;
-	        padding-right: 90px;
-	    }
+	.pricing-section .section-paragraph {
+		max-width: 640px;
+		padding:0;
 	}
-
 	.pricing-header {
 		margin-bottom: 52px;
 	}

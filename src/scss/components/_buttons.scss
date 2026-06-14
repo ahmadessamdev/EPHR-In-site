@@ -1,17 +1,22 @@
+@use "sass:color";
+@use "../abstracts/functions" as funcs;
+@use "../abstracts/mixins" as mxs;
+@use "../abstracts/include-media" as media;
+
 .button {
     display: inline-flex;
-    @include font-size(8, mobile, true, false, true);
-    @if ( get-font-size(8, desktop) != get-font-size(8, mobile) ) {
-        @include media( '>medium' ) {
-            @include font-size(8, desktop, true, false, true);
+    @include mxs.font-size(8, mobile, true, false, true);
+    @if ( funcs.get-font-size(8, desktop) != funcs.get-font-size(8, mobile) ) {
+        @include media.media( '>tablet' ) {
+            @include mxs.font-size(8, desktop, true, false, true);
         }
     }
-    @include font-weight(semibold);
+    @include mxs.font-weight(semibold);
     line-height: 16px;
     text-decoration: none !important;
 	text-transform: uppercase;
-    background-color: color(bg, 3);
-    color: color(typography, 1) !important;
+    background-color: funcs.color(bg, 3);
+    color: funcs.color(typography, 1) !important;
     border: none;
     border-radius: 2px;
     cursor: pointer;
@@ -22,7 +27,7 @@
     white-space: nowrap;
 
 	&:hover {
-		background: lighten(color(bg, 3), 1%);
+		background: color.adjust(funcs.color(bg, 3), $lightness: 1%);
 	}
 
     &:active {
@@ -40,12 +45,12 @@
 }
 
 .button-primary {
-	background: mix(color(primary, 1), color(primary, 2));
-    background: linear-gradient(65deg, color(primary, 1) 0, color(primary, 2) 100%);
+	background: color.mix(funcs.color(primary, 1), funcs.color(primary, 2));
+    background: linear-gradient(65deg, funcs.color(primary, 1) 0, funcs.color(primary, 2) 100%);
 
     &:hover {
-		background: lighten(mix(color(primary, 1), color(primary, 2)), 2%);
-        background: linear-gradient(65deg, lighten(color(primary, 1), 2%) 0, lighten(color(primary, 2), 2%) 100%);
+		background: color.adjust(color.mix(funcs.color(primary, 1), funcs.color(primary, 2)), $lightness: 2%);
+        background: linear-gradient(65deg, color.adjust(funcs.color(primary, 1), $lightness: 2%) 0, color.adjust(funcs.color(primary, 2), $lightness: 2%) 100%);
     }
 }
 
@@ -58,7 +63,8 @@
 	width: 100%;
 }
 
-@include media( '<=medium' ) {
+
+@include media.media( '<=tablet' ) {
 
 	.button-wide-mobile {
 		width: 100%;

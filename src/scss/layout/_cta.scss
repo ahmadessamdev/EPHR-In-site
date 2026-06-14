@@ -1,5 +1,10 @@
+@use "../abstracts/functions" as funcs;
+@use "../abstracts/mixins" as mxs;
+@use "../abstracts/include-media" as media;
+
 .cta {
 	text-align: center;
+	margin-bottom: 30px;
 
 	.section-inner {
 		padding: 48px 16px;
@@ -12,7 +17,7 @@
 
 .cta-inner {
 	position: relative;
-	background: color(bg, 1);
+	background: funcs.color(bg, 1);
 	overflow: hidden;
 
 	&::before {
@@ -31,7 +36,8 @@
 	}
 }
 
-@include media( '>medium') {
+
+@include media.media( '>tablet') {
 
 	.cta {
 		text-align: left;

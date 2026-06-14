@@ -1,3 +1,6 @@
+@use "../abstracts/include-media" as media;
+@use "../abstracts/mixins" as mxs;
+@use "../abstracts/functions" as funcs;
 html {
 	box-sizing: border-box;
 }
@@ -9,14 +12,14 @@ html {
 }
 
 body {
-	background: color(bg, 2); /* Fallback for when there is no custom background color defined. */
+	background: #1D2026; /* Fallback for when there is no custom background color defined. */
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 }
 
 hr {
 	border: 0;
-	@include divider();
+	@include mxs.divider();
 	margin-top: 24px;
 	margin-bottom: 24px;
 }
@@ -46,7 +49,7 @@ dl {
 }
 
 dt {
-	@include font-weight(semibold);
+	@include mxs.font-weight(semibold);
 }
 
 dd {
@@ -65,7 +68,7 @@ figure {
 }
 
 figcaption {
-	@include font-size(7, mobile, true, true);
+	@include mxs.font-size(7, mobile, true, true);
 	padding: 8px 0;
 }
 
@@ -82,7 +85,7 @@ table {
 }
 
 tr {
-	border-bottom: 1px solid color(bg, 3);
+	border-bottom: 1px solid funcs.color(bg, 3);
 }
 
 th {
