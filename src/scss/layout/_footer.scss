@@ -19,8 +19,8 @@
     position: relative; /* To display all elements above the background color */
     display: flex;
     flex-wrap: wrap;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .footer-brand,
@@ -66,14 +66,10 @@
 
 @include media.media( '>tablet' ) {
 
-	.site-footer {
-		margin-top: 20px;
-	}
-
     .site-footer-inner {
         justify-content: space-between;
-		padding-top: 64px;
-		padding-bottom: 64px;
+		padding-top: 20px;
+		padding-bottom: 20px;
     }
 
     .footer-brand,
